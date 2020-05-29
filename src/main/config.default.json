@@ -1,0 +1,12 @@
+{
+	"deezer": {
+		"loggedIn": false,
+		"sessionId": null,
+		"apiToken": null
+	},
+	"downloads": {
+		"quality": 1,
+		"directory": null,
+		"library": []
+	}
+}
