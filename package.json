@@ -1,7 +1,7 @@
 {
   "name": "freezer",
   "version": "0.0.1",
-  "author": "frannyfx"
+  "author": "frannyfx",
   "description": "Download and decrypt songs from Deezer",
   "license": null,
   "main": "./dist/electron/main.js",
