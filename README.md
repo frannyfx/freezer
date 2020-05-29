@@ -1,22 +1,9 @@
-# freebooter
+# freezer
+Download and decrypt tracks from Deezer in style.
 
-> Download and decrypt songs from Deezer
+![Freezer screeenshot](docs/screen.png)
 
-#### Build Setup
+This is simply for proof of concept purposes. I do not condone music piracy or listening to Maroon 5.
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
-
-
-```
-
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[45a3e22](https://github.com/SimulatedGREG/electron-vue/tree/45a3e224e7bb8fc71909021ccfdcfec0f461f634) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+## Known issues
+Your access token to Deezer will periodically expire around every 24hrs, hence you'll have to log in again and again every time.
