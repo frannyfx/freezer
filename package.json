@@ -1,7 +1,7 @@
 {
   "name": "freezer",
   "version": "0.0.1",
-  "author": "Francesco Compagnoni <compfrancesco@gmail.com>",
+  "author": "frannyfx",
   "description": "Download and decrypt songs from Deezer",
   "license": null,
   "main": "./dist/electron/main.js",
