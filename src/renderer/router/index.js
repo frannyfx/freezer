@@ -16,6 +16,16 @@ export default new Router({
       component: require("@/components/pages/Auth").default
     },
     {
+      path: "/downloads",
+      name: "downloads",
+      component: require("@/components/pages/Downloads").default
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: require("@/components/pages/Settings").default
+    },
+    {
       path: '*',
       redirect: '/'
     }
