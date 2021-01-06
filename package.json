@@ -56,7 +56,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "aes-js": "^3.1.2",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "node-id3": "^0.1.16",
     "uuid": "^8.1.0",
     "vue": "^2.5.16",
