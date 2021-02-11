@@ -8,5 +8,14 @@
 		"quality": 1,
 		"directory": null,
 		"library": []
+	},
+	"proxy": {
+		"protocol": null,
+		"host": null,
+		"port": null,
+		"auth": {
+			"username": null,
+			"password": null
+		}
 	}
 }
