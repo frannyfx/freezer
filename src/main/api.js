@@ -6,6 +6,7 @@ async function sendRequest(action = "GET", method, body) {
 	let apiToken = Store.get("deezer.apiToken");
 	let sessionId = Store.get("deezer.sessionId");
 
+	let proxyConfig = Store.get("proxy");
 	try {
 		// Send request
 		let response = await Axios.request({
@@ -14,7 +15,8 @@ async function sendRequest(action = "GET", method, body) {
 				Cookie: `sid=${sessionId};`
 			},
 			method: action,
-			data: body
+			data: body,
+			proxy: proxyConfig
 		});
 	
 		return response;
