@@ -1,5 +1,6 @@
 import Axios from "axios";
 import Store from "./store";
+import https from "https";
 
 async function sendRequest(action = "GET", method, body) {
 	// Get Deezer variables
@@ -14,11 +15,15 @@ async function sendRequest(action = "GET", method, body) {
 				Cookie: `sid=${sessionId};`
 			},
 			method: action,
-			data: body
+			data: body,
+			httpsAgent: new https.Agent({
+				rejectUnauthorized: false
+			})
 		});
 	
 		return response;
 	} catch (e) {
+		console.log(e);
 		console.warn("Unable to send Deezer request.", action, method, body);
 		return null;
 	}
@@ -85,7 +90,7 @@ async function sendSearchRequest(query) {
 		filter: "ALL",
 		output: "TRACK",
 		start: 0,
-		nb: 10
+		nb: 30
 	});
 
 	// Define an item converter

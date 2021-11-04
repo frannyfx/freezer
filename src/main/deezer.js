@@ -126,7 +126,7 @@ async function decryptionPromise(track, filePath, decryptedPath, outputPath) {
 async function downloadAndDecrypt(track, quality) {
 	try {
 		// Get URL
-		let url = Crypto.getStreamUrl(track.id, CDN, quality, track.md5, track.version);
+		let url = Crypto.getStreamUrl(track.id, CDN, MediaQuality.MP3_128, track.md5, track.version);
 
 		// Get extension
 		let extension = quality == MediaQuality.FLAC ? "flac" : "mp3";
